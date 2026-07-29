@@ -1,0 +1,29 @@
+{
+    "version": "1.20.0",
+    "architecture": {
+        "32bit": {
+            "url": "https://github.com/wanetty/upgopher/releases/download/v1.20.0/upgopher_1.20.0_windows_386.zip",
+            "bin": [
+                "upgopher_1.20.0_windows_386/upgopher.exe"
+            ],
+            "hash": "effd39b7e8314768da6423427bcd4542b862ca03ce2ba7e6cb7a8928da238215"
+        },
+        "64bit": {
+            "url": "https://github.com/wanetty/upgopher/releases/download/v1.20.0/upgopher_1.20.0_windows_amd64.zip",
+            "bin": [
+                "upgopher_1.20.0_windows_amd64/upgopher.exe"
+            ],
+            "hash": "f60c576e7293e71fdf4d4e480179186aa8d5563ab29b9c23362d7605573d3bbb"
+        },
+        "arm64": {
+            "url": "https://github.com/wanetty/upgopher/releases/download/v1.20.0/upgopher_1.20.0_windows_arm64.zip",
+            "bin": [
+                "upgopher_1.20.0_windows_arm64/upgopher.exe"
+            ],
+            "hash": "4e3fc17d537dd15293b41330f5ca387d78066ccf4130ff1aa1c445ae030b8c4f"
+        }
+    },
+    "homepage": "https://wanetty.github.io/upgopher/",
+    "license": "MIT",
+    "description": "Self-contained browser file and clipboard sharing server"
+}
