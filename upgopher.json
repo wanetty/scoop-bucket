@@ -1,29 +1,46 @@
 {
-    "version": "1.21.0",
     "architecture": {
         "32bit": {
-            "url": "https://github.com/wanetty/upgopher/releases/download/v1.21.0/upgopher_1.21.0_windows_386.zip",
             "bin": [
                 "upgopher_1.21.0_windows_386/upgopher.exe"
             ],
-            "hash": "b243850a0bd1d5828f30683709b103bc4821ad9b9b17873c77cf94c5d75e1aed"
+            "hash": "b243850a0bd1d5828f30683709b103bc4821ad9b9b17873c77cf94c5d75e1aed",
+            "url": "https://github.com/wanetty/upgopher/releases/download/v1.21.0/upgopher_1.21.0_windows_386.zip"
         },
         "64bit": {
-            "url": "https://github.com/wanetty/upgopher/releases/download/v1.21.0/upgopher_1.21.0_windows_amd64.zip",
             "bin": [
                 "upgopher_1.21.0_windows_amd64/upgopher.exe"
             ],
-            "hash": "47a6788c13b5803b9687985702a23936ba55435e369329e423e973f4ca8a4131"
+            "hash": "47a6788c13b5803b9687985702a23936ba55435e369329e423e973f4ca8a4131",
+            "url": "https://github.com/wanetty/upgopher/releases/download/v1.21.0/upgopher_1.21.0_windows_amd64.zip"
         },
         "arm64": {
-            "url": "https://github.com/wanetty/upgopher/releases/download/v1.21.0/upgopher_1.21.0_windows_arm64.zip",
             "bin": [
                 "upgopher_1.21.0_windows_arm64/upgopher.exe"
             ],
-            "hash": "247ce605011a88a94df6d35db266d9c6c4eebaadda12c2184d5f9162c839c9ed"
+            "hash": "247ce605011a88a94df6d35db266d9c6c4eebaadda12c2184d5f9162c839c9ed",
+            "url": "https://github.com/wanetty/upgopher/releases/download/v1.21.0/upgopher_1.21.0_windows_arm64.zip"
         }
     },
+    "autoupdate": {
+        "architecture": {
+            "32bit": {
+                "url": "https://github.com/wanetty/upgopher/releases/download/v$version/upgopher_$version_windows_386.zip"
+            },
+            "64bit": {
+                "url": "https://github.com/wanetty/upgopher/releases/download/v$version/upgopher_$version_windows_amd64.zip"
+            },
+            "arm64": {
+                "url": "https://github.com/wanetty/upgopher/releases/download/v$version/upgopher_$version_windows_arm64.zip"
+            }
+        },
+        "hash": {
+            "url": "$baseurl/checksums.txt"
+        }
+    },
+    "checkver": "github",
+    "description": "Self-contained browser file and clipboard sharing server",
     "homepage": "https://wanetty.github.io/upgopher/",
     "license": "MIT",
-    "description": "Self-contained browser file and clipboard sharing server"
+    "version": "1.21.0"
 }
